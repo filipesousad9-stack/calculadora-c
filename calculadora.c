@@ -1,0 +1,86 @@
+#include <stdio.h>
+
+#include "function_multiplicar.c"
+#include "function_dividir.c"
+
+int main() {
+
+    int opcao;
+    int num1;
+    int num2;
+    int resultado;
+    char continuar;
+
+    do {
+
+        printf("\n===== CALCULADORA =====\n");
+        printf("1 - Soma\n");
+        printf("2 - Subtracao\n");
+        printf("3 - Divisao\n");
+        printf("4 - Multiplicacao\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        if (opcao >= 1 && opcao <= 4) {
+            printf("Digite o primeiro numero: ");
+            scanf("%d", &num1);
+
+            printf("Digite o segundo numero: ");
+            scanf("%d", &num2);
+        }
+
+        switch (opcao) {
+
+            case 1:
+                resultado = num1 + num2;
+                printf("Resultado: %d\n", resultado);
+                break;
+
+            case 2:
+                resultado = num1 - num2;
+                printf("Resultado: %d\n", resultado);
+                break;
+
+            case 3:
+                resultado = dividir(num1, num2);
+                printf("Resultado: %d\n", resultado);
+                break;
+
+            case 4:
+                resultado = multiplicar(num1, num2);
+                printf("Resultado: %d\n", resultado);
+                break;
+
+            default:
+                printf("Opcao indisponivel\n");
+        }
+
+        printf("\nDeseja realizar outra operacao? (s/n): ");
+        scanf(" %c", &continuar);
+
+    } while (continuar == 's' || continuar == 'S');
+
+    return 0;
+}int multiplicar(int a, int b) {
+    int resultado = 0;
+
+    for (int i = 0; i < b; i++) {
+        resultado += a;
+    }
+
+    return resultado;
+}int dividir(int a, int b) {
+
+    if (b == 0) {
+        return 0;
+    }
+
+    int quociente = 0;
+
+    while (a >= b) {
+        a -= b;
+        quociente++;
+    }
+
+    return quociente;
+}
