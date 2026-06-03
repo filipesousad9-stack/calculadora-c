@@ -29,7 +29,7 @@ int main() {
             scanf("%d", &num2);
         }
 
-        switch (opcao) {
+        switch (opc) {
 
             case 1:
                 resultado = num1 + num2;
