@@ -8,8 +8,6 @@ int main() {
     int opcao;
     int num1;
     int num2;
-    int multiplicar;
-    int dividir;
     int resultado;
     int quociente;
     char continuar;
@@ -65,27 +63,6 @@ int main() {
 
     return 0;
 }
-
-int multiplique(int a, int b){
-    int resultado = 0;
-
-    for (int i = 0; i < b; i++) {
-        resultado += a;
-    }
-
-    return resultado;
-}
-int divida(int a, int b){
-
-    if (b == 0) {
-        return 0;
-    }
-
-    int quociente = 0;
-
-    while (a >= b) {
-        a -= b;
-        quociente++;
     }
     printf("Feito por Filipe Sousa de Lima\n");
     return quociente;
