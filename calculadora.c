@@ -81,6 +81,6 @@ int main() {
         a -= b;
         quociente++;
     }
-
+    printf("Feito por Filipe Sousa de Lima\n")
     return quociente;
 }
