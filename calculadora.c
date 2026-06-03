@@ -61,9 +61,7 @@ int main() {
 
     } while (continuar == 's' || continuar == 'S');
 
-    return 0;
-}
-    }
     printf("Feito por Filipe Sousa de Lima\n");
-    return quociente;
+
+    return 0;
 }
