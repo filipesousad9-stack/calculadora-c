@@ -13,5 +13,7 @@ int main() {
     assert(dividir(99,3) == 33);
     assert(dividir(144,12) == 12);
 
+    printf("Feito por Filipe Sousa de Lima\n")
+
     return 0;
 }
