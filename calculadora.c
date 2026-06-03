@@ -8,6 +8,8 @@ int main() {
     int opcao;
     int num1;
     int num2;
+    int multiplicar;
+    int dividir;
     int resultado;
     int quociente;
     char continuar;
