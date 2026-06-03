@@ -63,7 +63,7 @@ int main() {
     return 0;
 }
 
-int multiplicar(int a, int b); {
+int multiplicar(int a, int b){
     int resultado = 0;
 
     for (int i = 0; i < b; i++) {
@@ -72,7 +72,7 @@ int multiplicar(int a, int b); {
 
     return resultado;
 }
-int dividir(int a, int b); {
+int dividir(int a, int b){
 
     if (b == 0) {
         return 0;
