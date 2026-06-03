@@ -21,7 +21,7 @@ int main() {
         printf("Escolha uma opcao: ");
         scanf("%d", &opc);
 
-        if (opcao >= 1 && opc <= 4) {
+        if (opc >= 1 && opc <= 4) {
             printf("Digite o primeiro numero: ");
             scanf("%d", &num1);
 
