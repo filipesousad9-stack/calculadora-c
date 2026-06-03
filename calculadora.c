@@ -42,12 +42,12 @@ int main() {
                 break;
 
             case 3:
-                resultado = dividir(num1, num2);
+                resultado = divida(num1, num2);
                 printf("Resultado: %d\n", resultado);
                 break;
 
             case 4:
-                resultado = multiplicar(num1, num2);
+                resultado = multiplique(num1, num2);
                 printf("Resultado: %d\n", resultado);
                 break;
 
