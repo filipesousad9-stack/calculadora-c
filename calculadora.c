@@ -19,7 +19,7 @@ int main() {
         printf("3 - Divisao\n");
         printf("4 - Multiplicacao\n");
         printf("Escolha uma opcao: ");
-        scanf("%d", &opcao);
+        scanf("%d", &opc);
 
         if (opcao >= 1 && opc <= 4) {
             printf("Digite o primeiro numero: ");
